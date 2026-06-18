@@ -1,0 +1,37 @@
+#menu{
+    display: flex;
+    gap: 2vw;
+    list-style-type: none;
+    justify-content: center;
+    padding: 1vw;
+    margin: -1vw;
+    background-color: rgb(18 13 122 / 0.5);
+    border-bottom: solid 5px;
+}
+
+#menu li{
+    margin-top: 0.5vw;
+}
+
+#menu li a{
+    text-decoration: none;
+}
+
+#menu li a:visited{
+    color: #E0F7FA;
+}
+
+body {
+    background-color: #121214;
+    color: #E0F7FA;
+    text-align: center;
+}
+
+body > :not(header){
+    max-width: 75%;
+    margin: 1vw auto;
+}
+
+h2:first-of-type, h1:first-of-type{
+    margin-top: 2vw;
+}
