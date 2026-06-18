@@ -35,3 +35,49 @@ body > :not(header){
 h2:first-of-type, h1:first-of-type{
     margin-top: 2vw;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: dense;
+    gap: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.item {
+    position: relative;
+    background-color: #121214;
+    border: 8px solid #f7f5f0;
+    box-shadow: 0 8px 16px rgb(255 255 255 / 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.item:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.item-wide {
+    grid-column: span 2;
+}
+
+.item-tall {
+    grid-row: span 2;
+}
+
+.item-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
