@@ -88,22 +88,48 @@ iframe{
     height: 90vh;
 }
 
-#container {
+.container {
     margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#left{
+.left{
+    margin-top: -15vh;
     flex: 1;
 }
 
-#right{
+.right{
     margin-right: 10vw;
 }
 
-#pc{
+.proj_img{
+    margin-right: 10px;
+    margin-left: 10px;
     width: auto;
     max-height: 45vh;
+}
+
+.projetos{
+    color: white;
+    background-color: transparent;
+    height: 10vh;
+    width: 10vw;
+    text-decoration: underline;
+    box-shadow: 3px 3px 8px rgb(255 255 255 / 0.35);
+}
+
+.projetos:hover{
+    color: grey;
+    transform: scale(1.05);
+}
+
+div div p{
+    margin: 5vh 0 5vh 0;
+}
+
+div div a{
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
