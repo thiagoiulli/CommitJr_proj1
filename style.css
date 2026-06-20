@@ -134,3 +134,33 @@ div div a{
     margin-right: 1vw;
     margin-left: 1vw;
 }
+
+@media (max-width: 600px){
+    #menu{
+        min-height: 10vh;
+    }
+    #menu li{
+        margin-top: 5vw;
+    }
+    .galeria{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        max-width: 85%;
+    }
+    .container{
+        display: block;
+    }
+    div div p:first-of-type{
+        margin-top: 20vh;
+    }
+    div div button{
+        min-width: 35vw;
+        margin-bottom: 3vh;
+    }
+    .right{
+        margin: 0;
+    }
+}
+
+@media (max-width: 900px){
+
+}
