@@ -26,6 +26,7 @@ body {
     background-color: #121214;
     color: #E0F7FA;
     text-align: center;
+    font-size: 24px;
 }
 
 body > :not(header){
@@ -140,7 +141,8 @@ div div a{
         min-height: 10vh;
     }
     #menu li{
-        margin-top: 5vw;
+        margin-top: 3vh;
+        font-size: 18px;
     }
     .galeria{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -161,6 +163,29 @@ div div a{
     }
 }
 
-@media (max-width: 900px){
-
+@media (max-width: 1161px){
+    #menu{
+        min-height: 7vh;
+    }
+    #menu li{
+        margin-top: 2vh;
+        font-size: 22px;
+    }
+    .galeria{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        max-width: 85%;
+    }
+    .container{
+        display: inline;
+    }
+    div div p:first-of-type{
+        margin-top: 20vh;
+    }
+    div div button{
+        min-width: 35vw;
+        margin-bottom: 3vh;
+    }
+    .right{
+        margin: 0;
+    }
 }
